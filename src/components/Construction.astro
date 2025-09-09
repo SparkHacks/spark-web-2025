@@ -1,0 +1,102 @@
+<section class="hero relative bg-gradient-to-b font-mono">
+  <div
+    class="relative z-[60] flex h-[80vh] min-h-[640px] items-center whitespace-nowrap desktop:w-1/2 desktop:justify-center"
+  >
+    <div
+      class="flex w-full flex-col content-center items-center space-y-2 tablet:w-3/5 tablet:items-start tablet:pl-10"
+    >
+      <h1
+        class="title z-30 p-0 text-4xl font-bold text-[#ffffff] tablet:pl-8 tablet:text-6xl desktop:text-6xl"
+      >
+        SparkHacks
+      </h1>
+      <h1
+        class="z-30 px-0 text-2xl font-bold text-white tablet:pl-8 tablet:text-5xl desktop:text-5xl"
+      >
+        FEBRUARY 2026
+      </h1>
+      <h1
+        class="z-30 px-0 text-2xl font-bold text-white tablet:pl-8 tablet:text-5xl desktop:text-5xl"
+      >
+        🚧 COMING SOON
+      </h1>
+
+      <div
+        id="newsletter"
+        class="z-30 flex flex-col gap-5 px-0 font-bold text-white tablet:pl-8"
+      >
+        <h3
+          class="text-1xl tablet:text-1xl z-30 px-0 font-bold text-white tablet:pl-0 desktop:text-3xl"
+        >
+          Get notified when applications open
+        </h3>
+        <div>
+
+          <form id="waitlist" class="signup">
+            <input
+            class="text-black p-4"
+              id="waitlist-input"
+              type="email"
+              name="email"
+              placeholder="Enter uic.edu email"
+              required
+            />
+            <button id="join-waitlist" type="submit" class="text-white border-white-2 border p-[15px]">Join waitlist</button>
+            <p id="msg"></p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  #newsletter-button:hover {
+    background-color: white;
+    color: black;
+  }
+</style>
+
+<script>
+  const f = document.getElementById('waitlist') as HTMLFormElement | null;
+  const input = document.getElementById('waitlist-input') as HTMLInputElement || null;
+  const msg = document.getElementById('msg') as HTMLParagraphElement | null;
+  const btn = document.getElementById('join-waitlist') as HTMLButtonElement | null;
+
+  console.log(msg);
+  if (f && msg) {
+    f.addEventListener('submit', async (e) => {
+      e.preventDefault();
+
+      const fd = new FormData(f);
+      // fd.append('ua', navigator.userAgent);
+
+      const email = fd.get('email') as string;
+        if (!email.toLowerCase().endsWith("@uic.edu")) {
+          msg.textContent = "Please enter a valid @uic.edu email";
+          // btn.textContent = originalText;
+          // btn.disabled = false;
+          return; 
+        }
+        if(btn) {
+          btn.hidden = true;}
+          if(input){
+            input.hidden = true;
+          }
+
+      try {
+        const res = await fetch('https://script.google.com/macros/s/AKfycbxrn5AcxRFsfKUjXP-4v_e9EH0NrDvvz8rKyXrWkHeXVozoKE71H1B0o2F0BQBGcOLy4Q/exec', {
+          method: 'POST',
+          body: fd,            
+        });
+
+        const data = await res.json();
+        msg.textContent = data.message || 'Thanks!';
+        
+        if (data.ok) f.reset();
+      } catch (err) {
+        msg.textContent = 'Network error. Please try again.';
+      }
+    });
+  }
+</script>
