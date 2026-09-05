@@ -2,31 +2,31 @@ import { motion  } from 'framer-motion';
 
 const animals = [
   {
-    image: "../sponsors/crab.svg",
+    image: "/sponsors/crab.svg",
   },
   {
-    image: "../sponsors/seahorse.svg",
+    image: "/sponsors/seahorse.svg",
   },
   {
-    image: "../sponsors/greenfish.svg",
+    image: "/sponsors/greenfish.svg",
   },
   {
-    image: "../sponsors/starfish.svg",
+    image: "/sponsors/starfish.svg",
   },
   {
-    image: "../sponsors/orangefish.svg",
+    image: "/sponsors/orangefish.svg",
   },
   {
-    image: "../public/threejelly.svg",
+    image: "/public/threejelly.svg",
   },
   {
-    image: "../sponsors/turtle.svg",
+    image: "/sponsors/turtle.svg",
   },
   {
-    image: "../sponsors/crab.svg",
+    image: "/sponsors/crab.svg",
   },
   {
-    image: "../sponsors/greenwhale.svg",
+    image: "/sponsors/greenwhale.svg",
   },
 
 ]
@@ -58,7 +58,7 @@ export default function Animals(){
       className="flex flex-row w-full gap-[30px] mt-10 items-center">
           {animals.map((animal) => 
           <div className=' group relative flex justify-center items-center'>
-            <img src={animal.image} width="96" className="object-contain min-w-[50px]"></img>
+            <img src={import.meta.env.BASE_URL + animal.image} width="96" className="object-contain min-w-[50px]"></img>
             </div>
           )}
       

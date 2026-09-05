@@ -10,25 +10,25 @@ import Sponsor from '../components/Sponsor';
     <div class="flex animate-bob-sway-med" id="pink-jelly"></div></div>
   </h1>
   <div class="h-fit w-auto flex flex-wrap justify-between mx-[15px] mb-[-80px]">
-    <img class="sponsor-creature animate-bob-med block w-[96px]" src="sponsors/crab.svg" />
-    <img class="sponsor-creature animate-bob-sway-med block w-[96px]" src="sponsors/seahorse.svg" />
-    <img class="sponsor-creature block w-[96px]" src="sponsors/starfish.svg"/>
-    <img class="sponsor-creature animate-bob-sway-med block w-[96px]" src="sponsors/orangefish.svg"  />
+    <img class="sponsor-creature animate-bob-med block w-[96px]" src={import.meta.env.BASE_URL + "/sponsors/crab.svg"} />
+    <img class="sponsor-creature animate-bob-sway-med block w-[96px]" src={import.meta.env.BASE_URL + "/sponsors/seahorse.svg"} />
+    <img class="sponsor-creature block w-[96px]" src={import.meta.env.BASE_URL + "/sponsors/starfish.svg"}/>
+    <img class="sponsor-creature animate-bob-sway-med block w-[96px]" src={import.meta.env.BASE_URL + "/sponsors/orangefish.svg"}  />
   </div>
   <div class="w-full h-[318px] absolute z-0">
-    <img src="/sponsors/banner.svg" class="size-full" />
+    <img src={import.meta.env.BASE_URL + "/sponsors/banner.svg"} class="size-full" />
   </div>
   <Sponsor client:load/>
   <div class="h-fit w-auto flex flex-wrap justify-between mx-[80px] mt-[-20px]">
-    <img class="sponsor-creature animate-bob-sway-med block w-[96px]" src="sponsors/orangefish.svg"  />
-    <img class="sponsor-creature block w-[96px]" src="sponsors/greenwhale.svg"  />
-    <img class="sponsor-creature animate-bob-sway-med block w-[96px]" src="sponsors/turtle.svg"  />
+    <img class="sponsor-creature animate-bob-sway-med block w-[96px]" src={import.meta.env.BASE_URL + "/sponsors/orangefish.svg"}  />
+    <img class="sponsor-creature block w-[96px]" src={import.meta.env.BASE_URL + "/sponsors/greenwhale.svg"}  />
+    <img class="sponsor-creature animate-bob-sway-med block w-[96px]" src={import.meta.env.BASE_URL + "/sponsors/turtle.svg"}  />
   </div>  
 </section>
   
 <style>
 #pink-jelly {
-   background: url('../pinkjelly.svg'); 
+   background: url('/spark-web-2025/pinkjelly.svg'); 
    width: 75px;
    height: 75px;
    background-repeat: no-repeat;

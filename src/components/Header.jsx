@@ -72,7 +72,7 @@ export default function Header() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
             className="md:text-[50px] font-bold text-[35px] font-hyperhelix mb-6 flex md:flex-row flex-col justify-center items-center gap-2">
-              <img className="w-[100px] h-auto" src={"/sparkhacks-logo.svg"}/>
+              <img className="w-[100px] h-auto" src={import.meta.env.BASE_URL + "/sparkhacks-logo.svg"}/>
               <h1>SparkHacks 2025</h1>
           </motion.span>
           {
@@ -116,7 +116,7 @@ export default function Header() {
           </motion.button>
         </div>
         
-        <img src="/Jellyfish.svg" className='block absolute bottom-10 left-10 h-[150px] animate-bob-med'/>
+        <img src={import.meta.env.BASE_URL + "/Jellyfish.svg"} className='block absolute bottom-10 left-10 h-[150px] animate-bob-med'/>
       </motion.div>      
     </header>
   );

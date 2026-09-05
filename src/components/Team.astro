@@ -11,8 +11,8 @@ import { teamMembers } from "../data/teamMembers"
   <div class="flex flex-wrap justify-center gap-7 px-[10%] mt-20">
     {teamMembers.map(member => member.title === "Director" && (
       <div class="w-[250px] flex flex-col items-center">
-        <div class="relative h-[200px] w-[200px] bg-no-repeat bg-center bg-contain flex justify-center" style="background-image: url(/Shell.svg)">
-          <div class="w-[110px] h-[110px] rounded-full bg-cover bg-center mt-11 overflow-hidden shadow-[0_-3px_16px_4px_#f7f7f8]" style={`background-image: url(${member.image}) `}>
+        <div class="relative h-[200px] w-[200px] bg-no-repeat bg-center bg-contain flex justify-center" style="background-image: url(/spark-web-2025/Shell.svg)">
+          <div class="w-[110px] h-[110px] rounded-full bg-cover bg-center mt-11 overflow-hidden shadow-[0_-3px_16px_4px_#f7f7f8]" style={`background-image: url(${import.meta.env.BASE_URL + member.image}) `}>
             <a href={member.linkedin} target="_blank" class="w-full h-full bg-yellow-400 bg-opacity-30 opacity-0  transition duration-300 hover:opacity-100 flex items-center justify-center ">
               <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 19 20" fill="none">
                 <path d="M17.5 0H1.5C0.671875 0 0 0.671875 0 1.5V17.5C0 18.3281 0.671875 19 1.5 19H17.5C18.3281 19 19 18.3281 19 17.5V1.5C19 0.671875 18.3281 0 17.5 0ZM5.5 16.5H3V7H5.5V16.5ZM4.25 5.5C3.09375 5.5 2.25 4.65625 2.25 3.5C2.25 2.34375 3.09375 1.5 4.25 1.5C5.40625 1.5 6.25 2.34375 6.25 3.5C6.25 4.65625 5.40625 5.5 4.25 5.5ZM16.5 16.5H14V11.75C14 10.6875 13.8125 9.75 12.5 9.75C11.1875 9.75 11 10.6875 11 11.75V16.5H8.5V7H11V8.5C11.3125 7.625 12.125 6.5 14 6.5C15.875 6.5 16.5 7.625 16.5 9.25V16.5Z" fill="#fff"/>
@@ -30,8 +30,8 @@ import { teamMembers } from "../data/teamMembers"
   <div class="flex flex-wrap justify-center gap-y-7 px-[10%] mt-10 mb-20">
     {teamMembers.map(member => member.title !== "Director" && (
       <div class="w-[250px] flex flex-col items-center">
-        <div class="relative h-[200px] w-[200px] bg-no-repeat bg-center bg-contain flex justify-center" style="background-image: url(/Shell.svg)">
-          <div class="w-[110px] h-[110px] rounded-full bg-cover bg-center mt-11 overflow-hidden shadow-[0_-3px_16px_4px_#f7f7f8]" style={`background-image: url(${member.image}) `}>
+        <div class="relative h-[200px] w-[200px] bg-no-repeat bg-center bg-contain flex justify-center" style="background-image: url(/spark-web-2025/Shell.svg)">
+          <div class="w-[110px] h-[110px] rounded-full bg-cover bg-center mt-11 overflow-hidden shadow-[0_-3px_16px_4px_#f7f7f8]" style={`background-image: url(${import.meta.env.BASE_URL + member.image}) `}>
             <a href={member.linkedin} target="_blank" class="w-full h-full bg-black bg-opacity-30 opacity-0  transition duration-300 hover:opacity-100 flex items-center justify-center ">
               <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 19 20" fill="none">
                 <path d="M17.5 0H1.5C0.671875 0 0 0.671875 0 1.5V17.5C0 18.3281 0.671875 19 1.5 19H17.5C18.3281 19 19 18.3281 19 17.5V1.5C19 0.671875 18.3281 0 17.5 0ZM5.5 16.5H3V7H5.5V16.5ZM4.25 5.5C3.09375 5.5 2.25 4.65625 2.25 3.5C2.25 2.34375 3.09375 1.5 4.25 1.5C5.40625 1.5 6.25 2.34375 6.25 3.5C6.25 4.65625 5.40625 5.5 4.25 5.5ZM16.5 16.5H14V11.75C14 10.6875 13.8125 9.75 12.5 9.75C11.1875 9.75 11 10.6875 11 11.75V16.5H8.5V7H11V8.5C11.3125 7.625 12.125 6.5 14 6.5C15.875 6.5 16.5 7.625 16.5 9.25V16.5Z" fill="#fff"/>

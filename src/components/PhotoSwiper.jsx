@@ -21,37 +21,37 @@ export default function PhotoSwiper() {
       >
         <SwiperSlide>
           <div className="object-cover flex flex-col justify-center items-center px-[10%] desktop:px-[0%]">
-            <img className="max-h-[430px]" src="../photos/build.png"/>
+            <img className="max-h-[430px]" src={import.meta.env.BASE_URL + "/photos/build.png"}/>
             <h1 className='text-4xl py-10 text-center'>Build your resume!</h1>
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div className="object-cover flex flex-col justify-center items-center px-[10%] desktop:px-[0%]">
-            <img className="max-h-[430px]" src="../photos/compete.png"/>
+            <img className="max-h-[430px]" src={import.meta.env.BASE_URL + "/photos/compete.png"}/>
             <h1 className='text-4xl py-10 text-center'>Compete with your peers!</h1>
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div className="object-cover flex flex-col justify-center items-center px-[10%] desktop:px-[0%]">
-            <img className="max-h-[430px]" src="../photos/eat.png"/>
+            <img className="max-h-[430px]" src={import.meta.env.BASE_URL + "/photos/eat.png"}/>
             <h1 className='text-4xl py-10 text-center'>Eat good food!</h1>
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div className="object-cover flex flex-col justify-center items-center px-[10%] desktop:px-[0%]">
-            <img className="max-h-[430px]" src="../photos/speak.png"/>
+            <img className="max-h-[430px]" src={import.meta.env.BASE_URL + "/photos/speak.png"}/>
             <h1 className='text-4xl py-10 text-center'>Speak with recruiters!</h1>
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div className="object-cover flex flex-col justify-center items-center px-[10%] desktop:px-[0%]">
-            <img className="max-h-[430px]" src="../photos/become.png"/>
+            <img className="max-h-[430px]" src={import.meta.env.BASE_URL + "/photos/become.png"}/>
             <h1 className='text-4xl py-10 text-center'>Become more technical!</h1>
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div className="object-cover flex flex-col justify-center items-center px-[10%] desktop:px-[0%]">
-            <img className="max-h-[430px]" src="../photos/win.png"/>
+            <img className="max-h-[430px]" src={import.meta.env.BASE_URL + "/photos/win.png"}/>
             <h1 className='text-4xl py-10 text-center'>Win cool prizes!</h1>
           </div>
         </SwiperSlide>

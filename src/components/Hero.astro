@@ -16,25 +16,25 @@ import Counter from '../components/CountdownHero'
 
   <div class="absolute top-0 w-full h-full background-layer overflow-hidden">
     <div class="stars absolute top-0 left-0" />
-    <img class="dipper size-[175px] absolute left-52" src="/heroPageNew/star-constellation.svg" />
+    <img class="dipper size-[175px] absolute left-52" src={import.meta.env.BASE_URL + "/heroPageNew/star-constellation.svg"} />
     <div class="pl-14 moon-clouds absolute left-1/3 tablet:left-[50%] w-3/5 max-w-sm top-10">
       <!-- <img class="moon-clouds absolute left-1/3 tablet:left-[50%] w-3/5 max-w-sm top-14" src="/heroPageNew/MoonAndClouds.svg" /> -->
-      <img class="moon" src="/heroPageNew/moon-and-clouds/Moon.svg" />
-      <img class="cloud1" src="/heroPageNew/moon-and-clouds/Cloud-1.svg" />
-      <img class="cloud" src="/heroPageNew/moon-and-clouds/Cloud.svg" />
+      <img class="moon" src={import.meta.env.BASE_URL + "/heroPageNew/moon-and-clouds/Moon.svg"} />
+      <img class="cloud1" src={import.meta.env.BASE_URL + "/heroPageNew/moon-and-clouds/Cloud-1.svg"} />
+      <img class="cloud" src={import.meta.env.BASE_URL + "/heroPageNew/moon-and-clouds/Cloud.svg"} />
     </div>
-    <img class="dolphin z-40 absolute left-[45%] bottom-6 max-w-[20%] drop-shadow-xl" src="/heroPageNew/Dolphin.svg" />
+    <img class="dolphin z-40 absolute left-[45%] bottom-6 max-w-[20%] drop-shadow-xl" src={import.meta.env.BASE_URL + "/heroPageNew/Dolphin.svg"} />
     <div class="island-group right-[-500px] min-w-[500px]">
-      <img class="ground island" src="/heroPageNew/Island.svg" />
-      <img class="tree1" src="/heroPageNew/Tree.svg" />
-      <img class="tree2" src="/heroPageNew/Tree.svg" />
+      <img class="ground island" src={import.meta.env.BASE_URL + "/heroPageNew/Island.svg"} />
+      <img class="tree1" src={import.meta.env.BASE_URL + "/heroPageNew/Tree.svg"} />
+      <img class="tree2" src={import.meta.env.BASE_URL + "/heroPageNew/Tree.svg"} />
     </div>
   </div>
 
   <div class="relative flex h-[80vh] min-h-[640px] items-center z-[60] desktop:w-1/2 desktop:justify-center whitespace-nowrap ">
     <!-- SparkHacks Logo + CTA -->
     <div class="flex flex-col items-center tablet:items-start content-center space-y-2 tablet:pl-10 w-full tablet:w-3/5 desktop:w-auto ">
-      <img class="w-7/12 max-w-fit tablet:max-w-[18rem] pt-20 tablet:pl-5" src="/heroPageNew/logo-night.svg" alt="logo">
+      <img class="w-7/12 max-w-fit tablet:max-w-[18rem] pt-20 tablet:pl-5" src={import.meta.env.BASE_URL + "/heroPageNew/logo-night.svg"} alt="logo">
       <h1 class="title text-4xl tablet:text-6xl desktop:text-7xl font-bold p-0 tablet:pl-8 text-[#ffffff] z-30">
         SparkHacks 2025
       </h1>
@@ -62,12 +62,12 @@ import Counter from '../components/CountdownHero'
 <!-- water -->
 <div class="flex bg-[#01476d]">
   <div class="hero flex w-full h-[25vh] min-h-[200px] flex-row z-30 
-  bg-cover bg-bottom bg-no-repeat" style="background-image:url('/heroPageNew/water-night.svg')" >
-    <img class="w-full h-full object-cover " src="/heroPage/subtract.svg">
+  bg-cover bg-bottom bg-no-repeat" style="background-image:url('/spark-web-2025/heroPageNew/water-night.svg')" >
+    <img class="w-full h-full object-cover " src={import.meta.env.BASE_URL + "/heroPage/subtract.svg"}>
   </div>
 
   <img class="w-full h-full absolute z-20 
-  transform -translate-y-120 max-h-[50vh]" src="/heroPage/rays.png">
+  transform -translate-y-120 max-h-[50vh]" src={import.meta.env.BASE_URL + "/heroPage/rays.png"}>
 </div>
 
 <style>
@@ -244,7 +244,7 @@ import Counter from '../components/CountdownHero'
   }
   .stars {
     background-repeat: repeat-x;
-    background-image: url("/heroPageNew/stars-pattern.svg");
+    background-image: url("/spark-web-2025/heroPageNew/stars-pattern.svg");
     width:100%;
     height: 100%;
     mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 1) 30%, rgba(0, 0, 0, 0) 80%);
