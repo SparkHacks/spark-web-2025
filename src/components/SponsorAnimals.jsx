@@ -58,7 +58,7 @@ export default function Animals(){
       className="flex flex-row w-full gap-[30px] mt-10 items-center">
           {animals.map((animal) => 
           <div className=' group relative flex justify-center items-center'>
-            <img src={import.meta.env.BASE_URL + animal.image} width="96" className="object-contain min-w-[50px]"></img>
+            <img src={animal.image} width="96" className="object-contain min-w-[50px]"></img>
             </div>
           )}
       
